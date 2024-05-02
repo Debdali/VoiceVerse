@@ -1,0 +1,274 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+        background-image: url('backg.png');
+        background-size: cover; /* Scale the background image to cover the entire body */
+        background-repeat: no-repeat; /* Prevent the background image from repeating */
+   
+    
+}
+
+.container {
+    max-width: 600px;
+        margin: 50px auto;
+        padding: 40px; /* Increase padding */
+        background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex; /* Set container to flex */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+}
+
+
+.container:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Change box shadow on hover */
+}
+
+#voice-select {
+    width: 40%; /* Adjust width as needed */
+    padding: 8px; /* Smaller padding */
+    margin: 10px auto; /* Lower margin and center horizontally */
+    border: 1px solid #ccc;
+    border-radius: 15px; /* Smaller border-radius */
+    background-color: #fff;
+    font-size: 14px; /* Adjust font size */
+    color: #333;
+    display: inline-block; /* Display inline to position beside the button */
+}
+h1 {
+    text-align: center;
+    color: #343a40;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Change the font */
+}
+h1 span {
+    color:#17386e; /* Green color for the word "Converter" */
+}
+#converter {
+    color: #17386e; /* Green color */
+}
+#converter:hover {
+    color: #5376ae; /* Green color */
+}
+
+
+
+textarea {
+    width: 95%;
+    height: 200px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #999; /* Greyish color and thicker border */
+    border-radius: 20px;
+    resize: none;
+    background-image: linear-gradient(to bottom, #f2f2f2, #e6e6e6); /* Fading grey background */
+}
+
+
+button {
+    display: block;
+    width: 50%;
+    margin: 0 auto; 
+    padding: 10px;
+    background-color:#17386e;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(10, 38, 35);
+}
+
+
+audio {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#voice-select {
+    width: 40%; /* Adjust width as needed */
+    padding: 8px; /* Smaller padding */
+    margin: 10px auto; /* Center horizontally */
+    border: 1px solid #ccc;
+    border-radius: 15px; /* Smaller border-radius */
+    background-color: #fff;
+    font-size: 14px; /* Adjust font size */
+    color: #333;
+    display: block; /* Set to block */
+}
+
+#voice-select option {
+    font-size: 14px; /* Adjust font size */
+    color: #333;
+    margin: 0 auto; /* Center options */
+}
+
+.container {
+    max-width: 600px;
+        margin: 50px auto;
+        padding: 40px; /* Increase padding */
+        background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex; /* Set container to flex */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+}
+
+.container{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.speech-to-text-container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 40px; /* Increase padding */
+        background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex; /* Set container to flex */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    
+}
+
+.speech-to-text-container:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Change box shadow on hover */
+}
+    
+
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    resize: none;
+    background-color: #f9f9f9;
+}
+
+
+button {
+    width: 70%; /* Increase button width */
+    margin-top: 10px; /* Add some space between button and textarea */
+    padding: 10px;
+    background-color: #17386e;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+select {
+    width: 100%; /* Set to full width */
+    margin-top: 10px; /* Add some space between select and button */
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #333;
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 24px; /* Adjust font size */
+    font-family: "Arial", sans-serif; /* Specify the font family */
+}
+
+.navbar-brand span {
+    display: block;
+    text-align: center;
+}
+
+.navbar-brand span.voicever {
+    font-style: italic; /* Make it italic */
+}
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0; /* Increase vertical padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 24px; /* Adjust font size */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #051c40;
+    color: #fff;
+    padding: 30px 0; /* Increase vertical padding */
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Add transition for background color and box shadow */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.voiceVerse {
+    font-weight: bold;
+    font-size: 24px; /* Adjust font size */
+    font-family: "Arial", sans-serif; /* Specify the font family */
+}
+
+.navbar-brand span {
+    display: block;
+    text-align: center;
+}
+
+.navbar-brand span.voicever {
+    font-style: italic; /* Make it italic */
+    font-weight: bold; /* Make it bolder */
+}
+
+
+.microphone-icon {
+    width: 20px; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add some space between icon and text */
+}
+.button-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
+    margin-bottom: 20px;
+}
+
+.microphone-icon {
+    width: 20px; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 10px; /* Add some space between icon and button */
+}
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    resize: none;
+}
+.typography-icon {
+    width: 20px; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 5px; /* Add some space between icon and button */
+}
