@@ -347,3 +347,9 @@ body.dark {
   margin-right: 10px; /* Adding some space between icon and text */
 }
 
+
+@media only screen and (max-width: 480px) {
+    .container {
+        max-width: 90%;
+    }
+}

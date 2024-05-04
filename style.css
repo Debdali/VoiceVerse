@@ -352,3 +352,9 @@ button {
     background-color: rgb(10, 38, 35); /* Change hover color */
 }
 
+@media only screen and (max-width: 480px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
