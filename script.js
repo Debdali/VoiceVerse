@@ -2,7 +2,11 @@ const textInput = document.getElementById('text-input');
 const convertBtn = document.getElementById('convert-btn');
 const audio = document.getElementById('audio');
 const voiceSelect = document.getElementById('voice-select');
+const pauseResumeBtn = document.getElementById('pause-resume-btn');
+const stopBtn = document.getElementById('stop-btn');
+const progressBar = document.getElementById('progress-bar');
 
+let utterance = null;
 // Populate voice options
 function populateVoiceList() {
     const voices = speechSynthesis.getVoices();
@@ -35,6 +39,10 @@ convertBtn.addEventListener('click', () => {
         if (selectedVoice) {
             utterance.voice = selectedVoice;
             speechSynthesis.speak(utterance);
+            updateProgressBar();
+            utterance.onend = () => {
+                resetProgressBar();
+            };
         } else {
             alert('Selected voice not found.');
         }
@@ -43,10 +51,28 @@ convertBtn.addEventListener('click', () => {
     }
 });
 // Pause/resume speech when the audio element is clicked
-audio.addEventListener('click', () => {
-    if (speechSynthesis.speaking) {
-        speechSynthesis.pause();
-    } else {
+pauseResumeBtn.addEventListener('click', () => {
+    if (speechSynthesis.paused) {
         speechSynthesis.resume();
+        pauseResumeBtn.textContent = 'Pause';
+    } else {
+        speechSynthesis.pause();
+        pauseResumeBtn.textContent = 'Resume';
     }
 });
+
+// Stop speech
+stopBtn.addEventListener('click', () => {
+    speechSynthesis.cancel();
+    resetProgressBar();
+});
+
+// Update progress bar based on speech progress
+function updateProgressBar() {
+    progressBar.value = (utterance.elapsedTime / utterance.duration) * 100;
+}
+
+// Reset progress bar
+function resetProgressBar() {
+    progressBar.value = 0;
+}

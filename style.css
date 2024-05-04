@@ -3,30 +3,11 @@ body {
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-        background-image: url('backg.png');
-        background-size: cover; /* Scale the background image to cover the entire body */
-        background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-image: url('backg.png');
+    background-size: cover; /* Scale the background image to cover the entire body */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
    
-    
 }
-
-.container {
-    max-width: 600px;
-        margin: 50px auto;
-        padding: 40px; /* Increase padding */
-        background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        display: flex; /* Set container to flex */
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items horizontally */
-}
-
-
-.container:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Change box shadow on hover */
-}
-
 #voice-select {
     width: 40%; /* Adjust width as needed */
     padding: 8px; /* Smaller padding */
@@ -44,51 +25,43 @@ h1 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Change the font */
 }
 h1 span {
-    color:#17386e; /* Green color for the word "Converter" */
+    color:#17386e; 
 }
 #converter {
-    color: #17386e; /* Green color */
+    color: #3561ac; 
 }
 #converter:hover {
-    color: #5376ae; /* Green color */
+    color: #5376ae; 
 }
-
-
 
 textarea {
     width: 95%;
     height: 200px;
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 50px;
     border: 2px solid #999; /* Greyish color and thicker border */
-    border-radius: 20px;
+    border-radius: 50px;
     resize: none;
     background-image: linear-gradient(to bottom, #f2f2f2, #e6e6e6); /* Fading grey background */
 }
-
-
 button {
     display: block;
     width: 50%;
     margin: 0 auto; 
     padding: 10px;
-    background-color:#17386e;
+    background-color:#081934;
     color: #fff;
     border: none;
-    border-radius: 20px;
+    border-radius: 100px;
     cursor: pointer;
 }
-
 button:hover {
-    background-color: rgb(10, 38, 35);
+    background-color: rgb(15, 29, 46);
 }
-
-
 audio {
     width: 100%;
     margin-top: 20px;
 }
-
 #voice-select {
     width: 40%; /* Adjust width as needed */
     padding: 8px; /* Smaller padding */
@@ -100,27 +73,10 @@ audio {
     color: #333;
     display: block; /* Set to block */
 }
-
 #voice-select option {
     font-size: 14px; /* Adjust font size */
     color: #333;
     margin: 0 auto; /* Center options */
-}
-
-.container {
-    max-width: 600px;
-        margin: 50px auto;
-        padding: 40px; /* Increase padding */
-        background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        display: flex; /* Set container to flex */
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items horizontally */
-}
-
-.container{
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .speech-to-text-container {
@@ -130,23 +86,35 @@ audio {
         background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        display: flex; /* Set container to flex */
-        flex-direction: column; /* Stack items vertically */
+        display: flex; /* Setting container to flex */
+        flex-direction: column; /* Stacking items vertically */
         align-items: center; /* Center items horizontally */
     
 }
-
 .speech-to-text-container:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Change box shadow on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Changing box shadow on hover */
 }
-    
-
-
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.button-container button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    background-color: #17386e;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.button-container button:hover {
+    background-color: rgb(10, 38, 35);
+}   
 h1 {
     text-align: center;
     color: #333;
 }
-
 textarea {
     width: 100%;
     height: 200px;
@@ -157,11 +125,9 @@ textarea {
     resize: none;
     background-color: #f9f9f9;
 }
-
-
 button {
-    width: 70%; /* Increase button width */
-    margin-top: 10px; /* Add some space between button and textarea */
+    width: 70%; /* Increasing button width */
+    margin-top: 10px; /* Adding some space between button and textarea */
     padding: 10px;
     background-color: #17386e;
     color: #fff;
@@ -169,10 +135,9 @@ button {
     border-radius: 20px;
     cursor: pointer;
 }
-
 select {
-    width: 100%; /* Set to full width */
-    margin-top: 10px; /* Add some space between select and button */
+    width: 100%; /* Setting to full width */
+    margin-top: 10px; /* Adding some space between select and button */
     padding: 10px;
     background-color: #fff;
     border: 1px solid #ccc;
@@ -180,84 +145,81 @@ select {
     font-size: 14px;
     color: #333;
 }
-.navbar-brand {
-    font-weight: bold;
-    font-size: 24px; /* Adjust font size */
-    font-family: "Arial", sans-serif; /* Specify the font family */
-}
 
 .navbar-brand span {
     display: block;
     text-align: center;
 }
-
 .navbar-brand span.voicever {
-    font-style: italic; /* Make it italic */
+    font-style: italic; /* Making it italic */
 }
 .navbar {
     background-color: #333;
     color: #fff;
-    padding: 20px 0; /* Increase vertical padding */
+    padding: 30px 0; /* Incresing vertical padding */
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-
+} */
 
 .navbar-brand {
     font-weight: bold;
-    font-size: 24px; /* Adjust font size */
+    font-size: 24px; /* Adjusting font size */
 }
 
 /* Navbar Styles */
 .navbar {
-    background-color: #051c40;
+    background-color: rgba(12, 30, 52, 0.8);
     color: #fff;
-    padding: 30px 0; /* Increase vertical padding */
+    padding: 20px 0; /*Incresing vertical padding */
     display: flex;
-    justify-content: center; /* Center items horizontally */
+    justify-content: center; /* Centering items horizontally */
     align-items: center;
-    transition: background-color 0.3s, box-shadow 0.3s; /* Add transition for background color and box shadow */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s; /* Adding transition for background color and box shadow */
+    box-shadow: 0 0 20px rgba(65, 82, 117, 0.2);
 }
-
-
-
 
 .voiceVerse {
     font-weight: bold;
-    font-size: 24px; /* Adjust font size */
-    font-family: "Arial", sans-serif; /* Specify the font family */
+    font-size: 20px; /* Adjusting font size */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Specifying the font family */
+}
+
+.linked{
+    color: white;
+    margin-left: 1065px;
+    font-size: 20px;
+   font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .navbar-brand span {
     display: block;
-    text-align: center;
+    text-align: right;
 }
 
 .navbar-brand span.voicever {
-    font-style: italic; /* Make it italic */
-    font-weight: bold; /* Make it bolder */
+    font-style: italic; /* Making it italic */
+    font-weight: bold; /* Making it bolder */
 }
 
 
 .microphone-icon {
-    width: 20px; /* Adjust width */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 10px; /* Add some space between icon and text */
+    width: 20px; /* Adjusting width */
+    height: auto; /* Maintaining aspect ratio */
+    margin-right: 10px; /* Adding some space between icon and text */
 }
 .button-container {
     display: flex;
-    align-items: center; /* Align items vertically */
-    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Aligning items vertically */
+    justify-content: center; /* Centering items horizontally */
     margin-bottom: 20px;
 }
 
 .microphone-icon {
-    width: 20px; /* Adjust width */
-    height: auto; /* Maintain aspect ratio */
-    margin-left: 10px; /* Add some space between icon and button */
+    width: 20px; /* Adjusting width */
+    height: auto; /* Maintaining aspect ratio */
+    margin-left: 10px; /* Adding some space between icon and button */
 }
 textarea {
     width: 100%;
@@ -268,7 +230,125 @@ textarea {
     resize: none;
 }
 .typography-icon {
-    width: 20px; /* Adjust width */
-    height: auto; /* Maintain aspect ratio */
-    margin-left: 5px; /* Add some space between icon and button */
+    width: 20px; /* Adjusting width */
+    height: auto; /* Maintaing aspect ratio */
+    margin-left: 178px; /* Adding some space between icon and button */
 }
+/* Styles for speech controls */
+.speech-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.speech-controls button {
+    width: 70px;
+    height: 40px;
+    margin: 0 5px;
+    border-radius: 10%;
+    background-color: #17386e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.speech-controls button:hover {
+    background-color: rgb(10, 38, 35);
+}
+
+/* Style for progress bar container */
+.progress-bar-container {
+    margin-top: 20px;
+}
+
+/* Style for progress bar */
+progress {
+    width: 100%;
+    height: 20px;
+    appearance: none;
+    border: none;
+    border-radius: 10px;
+    background-color: #f2f2f2; /* Faded grey background */
+}
+
+
+#speech-text-output {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    resize: none;
+    background-color: #f9f9f9;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+  
+        max-width: 600px;
+        margin: 10px auto;
+        padding: 40px;
+        background-color: rgba(230, 226, 226, 0.861);
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    resize: none;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px; /* Adjust margin-bottom to lessen the gap */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#convert-btn {
+    display: block;
+    width: 50%; /* Adjust button width */
+    margin: 10px auto; 
+    padding: 10px 5px ;
+    background-color: #17386e; /* Change button color */
+    color: #fff;
+    border: none;
+    border-radius: 20px; /* Make button rounded */
+    cursor: pointer;
+}  
+
+#convert-btn:hover {
+    background-color: rgb(10, 38, 35); /* Change hover color */
+}
+

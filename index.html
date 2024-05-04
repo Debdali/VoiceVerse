@@ -5,16 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text to Speech Converter</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="style1.css"> -->
 </head>
 <body>
     <body style="background-image: url('backg.png');"></body>
     <div class="navbar">
         <img src="microphone.png" alt="Microphone" class="microphone-icon">
-    <span class="voiceVerse">VoiceVerse<span>- By Debdali</span></span>
-
+        <span class="voiceVerse">VoiceVerse<span>- By Debdali</span></span>
+        <p><a class="linked" href="translation.html">Translator</a></p>
     </div>
-    
     <div class="container">
         <h1>Text to Speech <span id="converter">Converter</span></h1>
         <textarea id="text-input" placeholder="Enter text or speak..."></textarea>
@@ -24,24 +22,26 @@
             <img src="typing.png" alt="Typography" class="typography-icon">
             <select id="voice-select"></select>
         </div>
+        <div class="speech-controls">
+            <button id="pause-resume-btn">Pause</button>
+            <button id="stop-btn">Stop</button>
+        </div>
+        <div class="progress-bar-container">
+            <progress id="progress-bar" value="0" max="100"></progress>
+        </div>
     </div>
-    
+    </div>
     <div class="speech-to-text-container">
         <h1>Speech to Text <span id="converter">Converter</span></h1>
         <div class="button-container">
-            
-            <button id="start-speech-btn">Start Speech Recognition</button>
-            <img src="microphone.png" alt="Microphone" class="microphone-icon">
+         <img src="microphone.png" alt="Microphone" class="microphone-icon">
+         <button id="start-listening-btn"> Start Listening</button>
+        <button id="stop-listening-btn">Stop Listening</button>
         </div>
         <textarea id="speech-text-output" placeholder="Spoken text will appear here..." readonly></textarea>
-
-    </div>
-    
-<!-- 
-    <select id="voice-select">
-        <option value="">Select a voice</option>
-    </select> -->
     <script src="script.js"></script>
     <script src="script1.js"></script>
+   
+    
 </body>
 </html>
